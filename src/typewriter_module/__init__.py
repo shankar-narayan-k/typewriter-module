@@ -20,9 +20,7 @@ try:
     __package_name__ = _meta.get("Name", DIST_NAME)
 
     # PEP 621 stores authors in Author-email
-    __author__, __author_email__ = parseaddr(
-        _meta.get("Author-email", "")
-    )
+    __author__, __author_email__ = parseaddr(_meta.get("Author-email", ""))
 
 except PackageNotFoundError:
     # Package has not been installed yet
