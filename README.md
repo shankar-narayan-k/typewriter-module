@@ -1,12 +1,53 @@
 # typewriter-module
-A POC inspired from [I love the typewriter effect in Python](https://youtube.com/shorts/88wzaOkV2mU)
 
-This is created as a simple POC based on the short from [Indently](https://youtube.com/@indently)
+A lightweight decorator-based typewriter effect for terminal output.
 
-You can find my flash of idea here: [https://youtube.com/shorts/88wzaOkV2mU?lc=UgzECUVaXXt6d3QnjHB4AaABAg](https://youtube.com/shorts/88wzaOkV2mU?lc=UgzECUVaXXt6d3QnjHB4AaABAg)
+## Installation
 
-The original logic is Gemini generated.
+```bash
+uv add typewriter-module
+```
 
-I put it together here for consumption.
+## Usage
 
-You can find the conversation here: [Python Typewriter Effect Code](https://g.co/gemini/share/4bee9496ea9c)
+```python
+from typewriter_module import typewriter
+
+@typewriter(
+    delay=0.04,
+    cursor=True,
+    random_delay=True,
+    final_pause=0,
+)
+def greet():
+    print("Hello World!")
+    print("Welcome to the typewriter module.")
+
+greet()
+```
+
+## Parameters
+
+| Parameter | Description |
+|------------|-------------|
+| `delay` | Base delay between characters |
+| `cursor` | Displays a cursor while typing |
+| `random_delay` | Adds natural variation to typing speed |
+| `final_pause` | Pause after function execution completes |
+| `stream` | Output stream (defaults to `sys.stdout`) |
+
+## Design
+
+This package is intentionally designed around a **decorator API**. The goal is to apply a typewriter effect to all `print()` calls within a function without changing the function body itself.
+
+## Inspiration
+
+Inspired by the [Indently](https://youtube.com/@indently)'s YouTube short [“I love the typewriter effect in Python”](https://youtube.com/shorts/88wzaOkV2mU).
+
+## My Light bulb Moment
+
+[can we make it a decorator so that all print statements from the function prints with this effect?...](https://youtube.com/shorts/88wzaOkV2mU?lc=UgzECUVaXXt6d3QnjHB4AaABAg)
+
+## Disclaimer
+
+The original proof-of-concept from Gemini's answer ([Python Typewriter Effect Code](https://g.co/gemini/share/4bee9496ea9c)) was refined and packaged as this reusable Python module.
