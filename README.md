@@ -50,4 +50,6 @@ Inspired by the [Indently](https://youtube.com/@indently)'s YouTube short [“I 
 
 ## Disclaimer
 
-The original proof-of-concept from Gemini's answer ([Python Typewriter Effect Code](https://g.co/gemini/share/4bee9496ea9c)) was refined and packaged as this reusable Python module.
+AI has been used in every step of this project, but the decisions are made by a human.
+
+The original proof-of-concept from Gemini's answer ([Python Typewriter Effect Code](https://g.co/gemini/share/4bee9496ea9c)) was refined and created as this reusable Python package.
