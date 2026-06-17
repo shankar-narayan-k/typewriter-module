@@ -1,17 +1,17 @@
-# typewriter-module
+# typewriter
 
 A lightweight decorator-based typewriter effect for terminal output.
 
 ## Installation
 
 ```bash
-uv add typewriter-module
+uv add typewriter
 ```
 
 ## Usage
 
 ```python
-from typewriter_module import typewriter
+from typewriter import typewriter
 
 @typewriter(
     delay=0.04,
@@ -21,7 +21,7 @@ from typewriter_module import typewriter
 )
 def greet():
     print("Hello World!")
-    print("Welcome to the typewriter module.")
+    print("Welcome to the typewriter.")
 
 greet()
 ```

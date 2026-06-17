@@ -1,5 +1,5 @@
 """
-typewriter-module
+typewriter
 """
 
 from email.utils import parseaddr

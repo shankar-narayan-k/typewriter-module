@@ -27,7 +27,7 @@ Recommended:
 Consider re-exporting the decorator from the package root so users can write:
 
 ```python
-from typewriter_module import typewriter_decorator
+from typewriter import typewriter_decorator
 ```
 
 instead of importing from `main`.

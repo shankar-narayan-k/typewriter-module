@@ -88,7 +88,7 @@ def main():
     @typewriter_decorator(delay=0.04)
     def greet_user(name):
         print(f"Hello, {name}!")
-        print("Welcome to the typewriter module.")
+        print("Welcome to the typewriter.")
 
     greet_user("Developer")
 
